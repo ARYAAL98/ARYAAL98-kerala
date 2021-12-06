@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript form validation - checking mail</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body background="images/check_high-resolution-rice-field.jpg">
+        <form action="Success.html" onsubmit="return validateEmail()">
+            <script src="./signup.js"></script>
+            <div class="bg">
+                <div class="form-container">
+                    <p class="form-header"> SIGN UP </p>
+                        <br>
+                        <label for="error" id="error"></label>
+                        <table class="form-table">
+                            <tr>
+                                <td> First Name: </td>
+                                <td> <input type ="text" name="firstname" required></td>
+                            </tr>
+                            <tr>
+                                <td> Last Name: </td>
+                                <td> <input text ="lastname" required></td>
+                            </tr>
+                            <tr>
+                                <td> Email : </td>
+                                <td> <input type="email" id="email" required> </td>
+                            </tr>
+                            <tr>
+                                <td> Password: </td>
+                                <td> <input type ="password" pattern="(?.*d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                    title="Must contain at least one number and one uppercase and lowercase letter,and at least 8 or more characters"/> </td>
+                            </tr>
+                            <td> Confirm password : </td>
+                            <td> <input type="password"
+                                    pattern="(?.*d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                    title="Must contain at least one number and one uppercase and lowercase letter,and at least 8 or more characters"/> </td>
+                            </tr>
+                            <tr>
+                                <td> Phone Number:</td>
+                                <td><input text="number"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button type="submit">Submit</button></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <br/>
+                                    Terms of Service :
+                                    <input name="terms" class="agree" type="radio"/>Agree
+                                    <input name="terms"  class="disagree" type="radio"/>Disagree
+                                    <br /> <br />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+            </div>  
+</body>
+</html>

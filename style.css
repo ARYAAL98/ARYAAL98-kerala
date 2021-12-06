@@ -1,0 +1,65 @@
+{    
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-size:cover;
+}
+header{
+    background-color:yellowgreen;
+}
+.logo{
+    width: 230 px;
+    height: 75px;
+    margin: 6px;
+    border-radius: 5px;
+}
+.head-tag{
+    float:right;
+    margin-top: 42px;
+    margin-right: 55px;
+}
+.head-tag a{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    margin: 0 15px;
+}
+.head-tag a:hover{
+    background-color:brown;
+}
+.header h1
+{
+    padding-top: 200px;
+    padding-bottom: 0;
+    font-size: 55px;
+    background-color: darkgreen;
+}
+.input-group
+{
+    width: 90;
+    max-width: 500px;
+    border-radius: 30px;
+    background: #fff;
+    margin: auto;
+    padding: 2px;
+}
+.form-control
+{
+    border: 0 !important;
+    border-radius: 30px 0 0 30px !important;
+    margin: 2px;
+    box-shadow: none !important;
+}
+.input-group-text
+{
+    width: 100px;
+    background-image: linear-gradient(#ffae00,#4a1f90);
+    border: 0 !important;
+    color: #fff !important;
+    padding: 0 25px;
+    border-radius: 30px;
+    box-shadow: none;
+}
