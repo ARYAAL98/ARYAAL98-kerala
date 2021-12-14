@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> Validated Login Form</title>
+    <link rel="stylesheet"  href="./Login.CSS">
+    <script src="./login.js"></script>
+</head>
+<body align = "center" background="images/http kerala.jpg" background-repeat: no-repeat-x;>
+    <div class="container">
+        <h1 class="label">User Login</h1>
+        <form class="login_form" method="post" name="form" onsubmit="return validated()" >
+            <div class="font">Email or Phone</div>
+            <input autocomplete="off" type="text" name="email">
+            <div id= "email_error"></div>
+            <div class="font font2">Password</div>
+            <input type="password" name="password">
+            <div id= "pass_error"></div>
+            <button type="submit">Login</button>
+            <a href="index.html">Back to Home Page</a>
+            
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
